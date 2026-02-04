@@ -1,1 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Alfa Publicidade e Propaganda</title>
 
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f2f2f2;
+}
+
+header{
+background:#111;
+padding:20px;
+text-align:center;
+}
+
+header{
+background:linear-gradient(135deg,#000,#111,#000);
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.card{
+background:white;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+cursor:pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+transform: translateY(-6px);
+box-shadow: 0 10px 22px rgba(0,0,0,0.4);
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.card h3{
+margin:15px;
+font-size:18px;
+font-weight:700;
+color:#111;
+}
+
+.card p{
+margin:0 15px 20px 15px;
+color:#555;
+font-size:14px;
+line-height:1.5;
+}
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+display:block;
+margin:10px;
+font-size:18px;
+}
+
+.botao{
+position:fixed;
+right:15px;
+display:flex;
+align-items:center;
+justify-content:flex-start;
+gap:10px;
+padding:10px 16px;
+border-radius:50px;
+color:white;
+font-size:14px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+width:180px;
+transition:0.2s;
+z-index:999;
+}
+
+/* ÍCONES */
+
+.botao img{
+width:22px;
+height:22px;
+flex-shrink:0;
+}
+
+/* TEXTO */
+
+.botao span{
+font-size:13px;
+}
+
+/* CORES */
+
+.whatsapp{
+background:#25D366;
+bottom:20px;
+}
+
+.instagram{
+background:#E1306C;
+bottom:80px;
+}
+
+.facebook{
+background:#1877F2;
+bottom:140px;
+}
+
+/* ANIMAÇÃO (BÔNUS) */
+
+.botao:hover{
+opacity:0.85;
+transform:scale(1.05);
+}
+
+/* MODAL */
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+}
+
+.modal img{
+max-width:90%;
+max-height:80%;
+}
+
+.modal div{
+background:white;
+padding:20px;
+border-radius:10px;
+max-width:400px;
+text-align:center;
+}
+
+.titulo-principal{
+  text-align:center;
+  color:white;
+  margin:25px 0 10px;
+  font-size:28px;
+  font-weight:700;
+}
+
+.btn-modal{
+display:inline-block;
+margin-top:15px;
+background:#25D366;
+color:white;
+padding:12px 20px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1 class="titulo-principal">
+Soluções em Marketing Digital para Crescimento Real
+</h1>
+<img src="imagens/logo.png">
+</header>
+
+<section class="galeria">
+
+<div class="card" onclick="abrirModal('imagens/foto1.png','Gestão de Tráfego Pago – Alfa Publicidade e Propaganda','Entre em Contato 🤝')">
+<img src="imagens/foto1.png">
+<h3>Gestão de Tráfego Pago – Alfa Publicidade e Propaganda</h3>
+<p>A Alfa Publicidade e Propaganda é especializada em gestão estratégica de tráfego pago, ajudando empresas a conquistarem mais visibilidade, mais clientes e mais vendas no ambiente digital.
+
+Enquanto seus clientes estão conectados todos os dias, nós garantimos que sua empresa apareça no momento certo, para as pessoas certas, por meio de anúncios inteligentes e bem segmentados nas principais plataformas digitais.
+
+Nosso serviço é focado em resultados reais, utilizando estratégias modernas de marketing digital para acelerar o crescimento do seu negócio, aumentar o reconhecimento da marca e gerar oportunidades constantes de vendas.
+
+🔹 O que entregamos:
+
+Criação e gestão de campanhas de tráfego pago
+
+Segmentação estratégica do público ideal
+
+Aumento de alcance, engajamento e conversões
+
+Otimização contínua para melhor custo-benefício
+
+Estratégias voltadas para crescimento rápido e sustentável
+
+🔹 Para quem é ideal:
+
+Empresas que querem vender mais
+
+Negócios que desejam se destacar da concorrência
+
+Marcas que buscam crescimento rápido no digital
+
+💡 A verdade é simples:
+Quem investe em anúncios cresce. Quem não investe, desaparece.
+
+Se você quer colocar sua empresa à frente e transformar anúncios em resultados, o caminho é um só:
+Tráfego pago bem feito.</p>
+</div>
+
+<div class="card" onclick="abrirModal('imagens/foto2.png','Automação de Atendimento e Relacionamento via WhatsApp – Alfa Publicidade e Propaganda','Entre em Contato 🤝')">
+<img src="imagens/foto2.png">
+<h3>Automação de Atendimento e Relacionamento via WhatsApp – Alfa Publicidade e Propaganda</h3>
+<p>Muitas empresas investem em tráfego pago, atraem clientes, mas não conseguem converter em vendas recorrentes. O problema não está no anúncio — está na falta de organização e relacionamento com os contatos.
+
+Pensando nisso, a Alfa Publicidade e Propaganda oferece uma solução completa de automação, organização e relacionamento via WhatsApp, transformando seu atendimento em uma verdadeira máquina de vendas.
+
+Com nosso método, sua empresa deixa de perder contatos e passa a nutrir clientes automaticamente, enviando mensagens estratégicas, divulgando produtos diariamente e mantendo um relacionamento contínuo que gera confiança e vendas.
+
+🔹 O que essa solução faz:
+
+Organiza todos os contatos em um único lugar
+
+Automatiza mensagens de atendimento e relacionamento
+
+Mantém sua empresa presente todos os dias na mente do cliente
+
+Cria relacionamento que gera recompra e indicação
+
+Aumenta as vendas sem depender apenas de novos anúncios
+
+🔹 Principais benefícios:
+
+O cliente volta a comprar
+
+Sua empresa vende com mais frequência
+
+Mais indicações e fidelização
+
+Atendimento mais profissional e escalável
+
+🔹 Resultado prático:
+✔ Organiza
+✔ Automatiza
+✔ Relaciona
+✔ Vende todos os dias
+
+Essa é a ferramenta ideal para empresas que querem aproveitar melhor seus leads, aumentar o faturamento e transformar o WhatsApp em um canal estratégico de vendas.</p>
+</div>
+
+<div class="card" onclick="abrirModal('imagens/foto3.png','Tráfego Pago + Automação de WhatsApp – Solução Completa de Crescimento','Entre em Contato 🤝')">
+<img src="imagens/foto3.png">
+<h3>Tráfego Pago + Automação de WhatsApp – Solução Completa de Crescimento</h3>
+<p>Muitas empresas ainda dependem apenas do público físico e de indicações ocasionais, deixando dinheiro na mesa todos os dias. Enquanto isso, concorrentes estão aparecendo para milhares de pessoas, capturando contatos e vendendo no automático.
+
+A Alfa Publicidade e Propaganda oferece uma solução completa de crescimento digital, unindo tráfego pago estratégico com automação inteligente de WhatsApp, para atrair, organizar, relacionar e vender de forma contínua.
+
+Com métodos e estratégias já validadas, sua empresa passa a anunciar para quem realmente quer comprar, organiza os contatos automaticamente e constrói um relacionamento sólido que gera vendas todos os dias.
+
+🔹 O que essa solução entrega:
+
+Anúncios segmentados para o público certo
+
+Captação automática de contatos qualificados
+
+Organização e gestão inteligente dos leads
+
+Automação de mensagens no WhatsApp
+
+Relacionamento contínuo com clientes
+
+🔹 Principais benefícios:
+
+Mais clientes todos os dias
+
+Mais relacionamento e fidelização
+
+Mais vendas no automático
+
+Menos dependência de sorte ou indicação
+
+🔹 Resultado final:
+✔ Mais clientes
+✔ Mais relacionamento
+✔ Mais vendas todos os dias
+
+Essa solução é ideal para empresas que querem parar de depender apenas do público físico, profissionalizar seu marketing digital e crescer de verdade de forma previsível e escalável.</p>
+</div>
+
+<div class="card" onclick="abrirModal('imagens/foto4.png','Método de Vendas pelo WhatsApp – Estratégia que Converte Conversas em Resultados','Entre em Contato 🤝')">
+<img src="imagens/foto4.png">
+<h3>Método de Vendas pelo WhatsApp – Estratégia que Converte Conversas em Resultados</h3>
+<p>Vender pelo WhatsApp não é questão de sorte — é estratégia. Muitas empresas conversam com clientes todos os dias, mas continuam perdendo dinheiro por não terem um método claro para transformar essas conversas em vendas.
+
+A Alfa Publicidade e Propaganda desenvolveu um método estratégico de vendas pelo WhatsApp, já aplicado em mais de 150 empresas, que ajuda negócios a fortalecer a marca, atrair as pessoas certas e fechar vendas de forma constante, todos os dias.
+
+Enquanto muitos ainda esperam o cliente chegar, empresas inteligentes utilizam o WhatsApp como uma máquina de vendas ativa, com processos bem definidos, mensagens estratégicas e relacionamento contínuo.
+
+🔹 O que esse método entrega:
+
+Estratégia clara para vender pelo WhatsApp
+
+Conversas transformadas em oportunidades reais
+
+Atração do público certo para o seu negócio
+
+Fortalecimento da marca no atendimento
+
+Redução de perdas por falta de estratégia
+
+🔹 Principais benefícios:
+
+Mais vendas todos os dias
+
+Mais autoridade e posicionamento
+
+Mais previsibilidade nos resultados
+
+Menos dinheiro perdido por erros de abordagem
+
+🔹 Diferencial do método:
+Não é improviso.
+Não é sorte.
+É estratégia aplicada para crescimento real.
+
+Essa solução é ideal para empresas que querem virar a chave do faturamento, profissionalizar suas vendas no WhatsApp e deixar de ficar para trás no mercado digital.</p>
+</div>
+
+
+</section>
+
+<footer>
+
+<a href="https://wa.me/5568992259080">WhatsApp: 68 99225-9080</a>
+
+<a href="https://www.instagram.com/alfa_publicidade_e_propaganda/">
+Instagram - Alfa Publicidade e Propaganda
+</a>
+
+<a href="https://www.facebook.com/AlfaPublicidadePropaganda/">
+Facebook - Alfa Publicidade e Propaganda
+</a>
+
+</footer>
+
+<footer>
+
+<p><strong>Alfa Publicidade e Propaganda</strong></p>
+
+<p>📲 WhatsApp: (68) 99225-9080</p>
+
+<p>📸 Instagram: @alfa_publicidade_e_propaganda</p>
+
+<p>📘 Facebook: Alfa Publicidade e Propaganda</p>
+
+<p style="margin-top:15px;font-size:13px;color:#aaa;">
+© 2026 - Todos os direitos reservados
+</p>
+
+</footer>
+
+<a class="botao whatsapp" href="https://wa.me/5568992259080">
+<img src="icons/whatsapp.png">
+
+<span>WhatsApp</span>
+</a>
+
+<a class="botao instagram" href="https://www.instagram.com/alfa_publicidade_e_propaganda/">
+<img src="icons/instagram.png">
+<span>Instagram</span>
+
+</a>
+
+<a class="botao facebook" href="https://www.facebook.com/AlfaPublicidadePropaganda/">
+<img src="icons/facebook.png">
+<span>Facebook</span>
+
+</a>
+
+
+<div class="modal" id="modal" onclick="fecharModal()">
+<div class="modal-box">
+
+<img id="modalImg">
+
+<h3 id="modalTitulo"></h3>
+
+<p id="modalDesc"></p>
+
+<a href="https://wa.me/5568992259080" class="btn-modal">
+Quero falar no WhatsApp
+</a>
+
+</div>
+</div>
+
+<script>
+
+function abrirModal(img,titulo,desc){
+document.getElementById("modal").style.display="flex";
+document.getElementById("modalImg").src=img;
+document.getElementById("modalTitulo").innerText=titulo;
+document.getElementById("modalDesc").innerText=desc;
+}
+
+function fecharModal(){
+document.getElementById("modal").style.display="none";
+}
+
+</script>
+
+</body>
+</html>
